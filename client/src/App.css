@@ -40,7 +40,7 @@ label {
   font-size: 1rem;
 }
 
-input, textarea, select {
+input, select {
   width: 100%;
   padding: 8px 10px;
   box-sizing: border-box;
@@ -48,19 +48,30 @@ input, textarea, select {
   color: #E8E8E8;
   border: 2px solid #3C3C3C;
   border-radius: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.3s;
 }
 
-input:focus, textarea:focus, select:focus {
-  border-color: #4CAF50;
-  box-shadow: 0 0 10px #4CAF50;
+#pseudoCode {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  resize: vertical;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background-color: #2E2E2E;
+  color: #E8E8E8;
+  border: 2px solid #3C3C3C;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
-textarea {
-  resize: vertical;
-  height: 160px;
+input:focus, textarea:focus, select:focus, #pseudoCode:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px #4CAF50;
 }
 
 .implementButton {
@@ -92,6 +103,51 @@ textarea {
   text-align: center;
 }
 
+#paperDescription {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  resize: vertical;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background-color: #2E2E2E;
+  color: #E8E8E8;
+  border: 2px solid #3C3C3C;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+ 
+textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  resize: vertical;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background-color: #2E2E2E;
+  color: #E8E8E8;
+  border: 2px solid #3C3C3C;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#pseudoCode {
+  font-family: 'Courier New', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  resize: vertical;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background-color: #2E2E2E;
+  color: #E8E8E8;
+  border: 2px solid #3C3C3C;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
 /* Media queries for additional responsiveness */
 
 @media only screen and (max-width: 600px) {
@@ -107,12 +163,12 @@ textarea {
       font-size: 0.9rem;
   }
 
-  input, textarea, select {
+  input, select, #pseudoCode {
       padding: 6px 8px;
       font-size: 0.85rem;
   }
 
-  textarea {
+  #pseudoCode {
       height: 140px;
   }
 

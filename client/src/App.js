@@ -6,6 +6,8 @@ import TextareaField from './TextareaField';
 import DropdownField from './DropdownField';
 import ImplementButton from './ImplementButton';
 import './App.css';
+import TextareaAutosize from 'react-textarea-autosize';
+
 
 function App() {
     const [title, setTitle] = useState('');
@@ -22,7 +24,14 @@ function App() {
         <div className="app">
             <h1>Easy Paper Implement</h1>
             <InputField label="Paper Title" value={title} onChange={setTitle} />
-            <TextareaField label="Pseudo Code" value={pseudoCode} onChange={setPseudoCode} />
+            <label htmlFor="pseudoCode">Pseudo Code</label>
+            <TextareaAutosize
+                minRows={5}
+                maxRows={30}
+                id="pseudoCode"
+                value={pseudoCode}
+                onChange={(e) => setPseudoCode(e.target.value)}
+            />
             <TextareaField label="Paper Description" value={description} onChange={setDescription} />
             <DropdownField label="Select Language" value={language} onChange={setLanguage} options={['Python', 'C++', 'Java', 'Go', 'Rust']} />
             <ImplementButton onClick={handleImplement} />
