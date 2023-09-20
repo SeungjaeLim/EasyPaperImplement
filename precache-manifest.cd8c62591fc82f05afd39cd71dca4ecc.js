@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6eb9ac6ea9f7802da44c",
-    "url": "/EasyPaperImplement/static/css/main.406f0e62.chunk.css"
+    "revision": "667598449a6a881be21d",
+    "url": "/EasyPaperImplement/static/css/main.3888ae84.chunk.css"
   },
   {
-    "revision": "6eb9ac6ea9f7802da44c",
-    "url": "/EasyPaperImplement/static/js/main.6eb9ac6e.chunk.js"
+    "revision": "667598449a6a881be21d",
+    "url": "/EasyPaperImplement/static/js/main.66759844.chunk.js"
   },
   {
     "revision": "927bd4bacd441db6510d",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/EasyPaperImplement/static/js/runtime~main.28eecd1e.js"
   },
   {
-    "revision": "4785e1c1acda686d9893188908d654dc",
+    "revision": "42ba3eddd246171554e45aa62b7c4ce7",
     "url": "/EasyPaperImplement/index.html"
   }
 ];
